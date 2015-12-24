@@ -1,8 +1,7 @@
 # Directories to Ignore
 /.vagrant
 /www/**
-!/www/default
-!/www/default/**
+!/www/.gitkeep
 node_modules
 
 # Files to Ignore
