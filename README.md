@@ -26,10 +26,18 @@ vagrant up
 
 Note: Vagrant will download the necessary box automatically if it isn't already on the machine.
 
-After a few minutes of downloading, upgrading, and configuring the box, you will have a fully functional dev environment with node, mongodb, and redis. A couple of things to keep note of:
+After a few minutes of downloading, upgrading, and configuring the box, you will have a fully functional dev environment. A couple of things to keep note of:
 
 - The ```www``` directory is synced to ```/home/vagrant/www```
 - Port ```1337``` in the VM is mapped to ```1337``` on localhost
+
+## Included Packages
+
+- [x] Node.js
+- [x] MongoDB
+- [x] Redis
+- [ ] Ruby
+- [ ] ...
 
 ## Included NPM Packages
 
