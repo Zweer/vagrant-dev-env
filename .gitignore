@@ -1,9 +1,3 @@
 # Directories to Ignore
-/.vagrant
 /www/**
 !/www/.gitkeep
-node_modules
-
-# Files to Ignore
-*.log
-npm-debug.log.*
