@@ -44,6 +44,10 @@ After a few minutes of downloading, upgrading, and configuring the box, you will
 - [PM2](https://github.com/Unitech/pm2): Process Manager
 - [Yeoman](http://yeoman.io/): Project Scaffolding Tool
 
+## Included Gems
+
+- [Bundler](http://bundler.io/): Dependencies Manager
+
 #### Customizing Your Installation
 
 If you want to customize your included packages (see the above list), then you can easily do so by changing the ```postinstall.sh``` script. This script is run as the vagrant user, not root.
