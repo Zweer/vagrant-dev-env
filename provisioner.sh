@@ -13,16 +13,20 @@ printf "Preparing to install MongoDB..."
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 # create a list file for MongoDB
 echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
-# reload the local package database
-apt-get update
-printf "  ...done"
 
 printf "Preparing to install nodejs..."
 curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
+printf "Preparing to install ruby 2.1..."
+apt-add-repository ppa:brightbox/ruby-ng -y
+
+printf "Reloading the apt-get configuration..."
+# reload the local package database
+apt-get update
+
 printf "Installing a few necessary packages..."
 # install required packages
-apt-get install -y git nodejs mongodb-org redis-server build-essential ruby ruby-dev
+apt-get install -y git nodejs mongodb-org redis-server build-essential ruby2.1
 
 printf "Backing up config files..."
 # backup mongodb-org config file
