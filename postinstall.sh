@@ -8,4 +8,4 @@ sudo npm install -g pm2
 sudo npm install -g yo
 
 # install common gem
-gem install bundler
+sudo gem install bundler
