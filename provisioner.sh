@@ -22,7 +22,7 @@ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
 printf "Installing a few necessary packages..."
 # install required packages
-apt-get install -y git nodejs mongodb-org redis-server build-essential
+apt-get install -y git nodejs mongodb-org redis-server build-essential ruby ruby-dev
 
 printf "Backing up config files..."
 # backup mongodb-org config file

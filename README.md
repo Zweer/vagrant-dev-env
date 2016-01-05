@@ -36,7 +36,7 @@ After a few minutes of downloading, upgrading, and configuring the box, you will
 - [x] Node.js
 - [x] MongoDB
 - [x] Redis
-- [ ] Ruby
+- [x] Ruby
 - [ ] ...
 
 ## Included NPM Packages
