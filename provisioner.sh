@@ -27,6 +27,8 @@ apt-get update
 printf "Installing a few necessary packages..."
 # install required packages
 apt-get install -y git nodejs mongodb-org redis-server build-essential ruby2.1 ruby2.1-dev zlib1g-dev
+# removing useless packages
+apt-get autoremove
 
 printf "Backing up config files..."
 # backup mongodb-org config file
